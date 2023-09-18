@@ -1,0 +1,25 @@
+<form [formGroup]="addStudent" (ngSubmit)="onSubmit()">
+
+    <mat-form-field>
+        <mat-label>MSV</mat-label>
+        <input matInput type="text" formControlName="id">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Ho va ten</mat-label>
+        <input matInput type="text" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Ngay sinh</mat-label>
+        <input matInput type="text" formControlName="birtday">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>diem TB</mat-label>
+        <input matInput type="text" formControlName="number">
+    </mat-form-field>
+
+    <button mat-stroked-button type="submit" [disabled]="!addStudent.valid">Them</button>
+  
+  </form>

@@ -1,0 +1,16 @@
+<table>
+    <tr>
+      <th>MSV</th>
+      <th>Ho va ten</th>
+      <th>Ngay sinh</th>
+      <th>Diem TB</th>
+    </tr>
+    <tr *ngFor="let data of datas">
+       <td>{{data?.id}}</td>
+       <td>{{data?.name}}</td>
+       <td>{{data?.birtday}}</td>
+       <td>{{data?.number}}</td>
+    </tr>
+</table>
+
+<button mat-button class="add" (click)="addStudent()">Them</button>

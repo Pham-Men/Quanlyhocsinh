@@ -1,0 +1,15 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field>
+        <mat-label for="name">Ten: </mat-label>
+        <input matInput id="name" type="text" formControlName="name" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label for="pass">Mat khau: </mat-label>
+        <input matInput id="pass" type="text" formControlName="pass" required>
+    </mat-form-field>
+
+    <button mat-stroked-button type="submit" [disabled]="!loginForm.valid">Dang nhap</button>
+
+</form>

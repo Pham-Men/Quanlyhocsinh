@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "name": "Pham Thi Men",
+      "birtday": "01/01/1993",
+      "number": 9
+    },
+    {
+      "id": 2,
+      "name": "Pham Thi Men",
+      "birtday": "01/01/1993",
+      "number": 9
+    },
+    {
+      "id": 3,
+      "name": "Pham Thi Men",
+      "birtday": "01/01/1993",
+      "number": 9
+    },
+    {
+      "id": 4,
+      "name": "Pham Thi Men",
+      "birtday": "01/01/1993",
+      "number": 9
+    },
+    {
+      "id": 5,
+      "name": "Men",
+      "birtday": "01/02/1993",
+      "number": 9
+    },
+    {
+      "id": "6",
+      "name": "23333",
+      "birtday": "3",
+      "number": "4"
+    }
+  ]
+}

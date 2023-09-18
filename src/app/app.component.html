@@ -1,0 +1,50 @@
+<mat-toolbar class="nav-height" color="primary">
+
+ <button mat-button (click)="opened=!opened">
+   <mat-icon>menu</mat-icon>
+   <span>Trang chu</span>
+ </button>
+
+ <div class="toolbar-list">
+  <a mat-button routerLink="/home">
+    <mat-icon mat-list-icon>home</mat-icon>
+    Gioi thieu
+  </a>
+  <a mat-button routerLink="/infor">
+    <mat-icon mat-list-icon>infor</mat-icon>
+    Sinh vien
+  </a>
+  <a mat-raised-button color="accent" routerLink="/login">Dang nhap</a>
+ </div>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened">
+    <ul>
+      <a mat-button routerLink="/home">
+        <mat-icon>home</mat-icon>
+        Trang chu
+      </a>
+      <a mat-button routerLink="/infor">
+        <mat-icon>infor</mat-icon>
+        Sinh vien
+      </a>
+      <a mat-button (click)="opened=!opened"><mat-icon>close</mat-icon></a>
+    </ul>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div 
+      [ngClass]=
+        "{
+        'content-right': opened,
+        'content-left': !opened
+        }">
+      <router-outlet ></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+

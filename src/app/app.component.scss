@@ -1,0 +1,39 @@
+.nav-height {
+  display: flex;
+  justify-content: space-between;
+  height: 7vh;
+}
+
+.toolbar-list {
+  margin: 20px;
+}
+
+mat-sidenav-container {
+  height: 93vh;
+  background-color: white;
+  color: black;
+}
+
+mat-sidenav {
+  width: 220px;
+  height: 200px;
+  background-color: rgb(50, 126, 224);
+}
+
+.content-right {
+  margin-left: 230px;
+  transition: ease .01s;
+}
+
+.content-left {
+  margin-left: 10px;
+  transition: ease .01s;
+}
+
+a:nth-child(2) {
+  margin-right: 18px;
+}
+
+ul a {
+  margin-top: 10px;
+}
