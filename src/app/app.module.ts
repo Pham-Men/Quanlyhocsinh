@@ -22,7 +22,6 @@ import { InforComponent } from './infor/infor.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { AddStudentComponent } from './add-student/add-student.component';
-import { SortComponent } from './sort/sort.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { SortComponent } from './sort/sort.component';
     InforComponent,
     LoginComponent,
     AddStudentComponent,
-    SortComponent
   ],
   imports: [
     BrowserModule,
